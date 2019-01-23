@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.5">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,39 +53,30 @@
   <ItemGroup>
     <Reference Include="DevExpress.Printing.v16.1.Core">
       <Private>True</Private>
-      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Printing.v16.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v16.1">
       <Private>True</Private>
-      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Data.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Xpo.v16.1">
       <Private>True</Private>
-      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.ExpressApp.Xpo.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.v16.1">
       <Private>True</Private>
-      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.ExpressApp.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Objects.v16.1">
       <Private>True</Private>
-      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.ExpressApp.Objects.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.ExpressApp.Validation.v16.1">
       <Private>True</Private>
-      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.ExpressApp.Validation.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Persistent.Base.v16.1">
       <Private>True</Private>
-      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Persistent.Base.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Persistent.BaseImpl.v16.1">
       <Private>True</Private>
-      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Persistent.BaseImpl.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpo.v16.1">
       <Private>True</Private>
-      <HintPath>C:\Program Files (x86)\DevExpress 16.1\Components\Bin\Framework\DevExpress.Xpo.v16.1.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
