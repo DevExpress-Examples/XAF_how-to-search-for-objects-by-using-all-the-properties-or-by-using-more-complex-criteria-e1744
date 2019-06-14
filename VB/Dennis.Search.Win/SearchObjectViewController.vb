@@ -30,8 +30,9 @@ Namespace Dennis.Search.Win
             SearchObject(args)
         End Sub
         Protected Overridable Sub SearchObject(ByVal args As SingleChoiceActionExecuteEventArgs)
-            Dim os As IObjectSpace = Application.CreateObjectSpace()
-            Dim obj As Object = os.CreateObject(CType(args.SelectedChoiceActionItem.Data, Type))
+            Dim type As Type = CType(args.SelectedChoiceActionItem.Data, Type)
+            Dim os As IObjectSpace = Application.CreateObjectSpace(type)
+            Dim obj As Object = os.CreateObject(type)
             Dim dv As DetailView = Application.CreateDetailView(os, obj)
             args.ShowViewParameters.CreatedView = dv
         End Sub
