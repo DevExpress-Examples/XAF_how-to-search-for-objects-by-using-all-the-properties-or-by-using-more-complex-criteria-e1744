@@ -29,26 +29,26 @@ Imports DevExpress.ExpressApp
 Imports DevExpress.Data.Filtering
 
 Namespace WinSolution.Module
-    Public Class Updater
-        Inherits ModuleUpdater
+	Public Class Updater
+		Inherits ModuleUpdater
 
-        Public Sub New(ByVal objectSpace As IObjectSpace, ByVal currentDBVersion As Version)
-            MyBase.New(objectSpace, currentDBVersion)
-        End Sub
-        Public Overrides Sub UpdateDatabaseAfterUpdateSchema()
-            MyBase.UpdateDatabaseAfterUpdateSchema()
-             InitData()
-        End Sub
-        Private Sub InitData()
-            If ObjectSpace.GetObjectsCount(GetType(Product), Nothing) < 10000 Then
-                For i As Integer = 0 To 9999
-                    Dim product As Product = ObjectSpace.CreateObject(Of Product)()
-                    product.Name = String.Format("Product{0}", i)
-                    product.Description = String.Format("Description{0}", i)
-                    product.Price = i Mod 10
-                Next i
-                ObjectSpace.CommitChanges()
-            End If
-        End Sub
-    End Class
+		Public Sub New(ByVal objectSpace As IObjectSpace, ByVal currentDBVersion As Version)
+			MyBase.New(objectSpace, currentDBVersion)
+		End Sub
+		Public Overrides Sub UpdateDatabaseAfterUpdateSchema()
+			MyBase.UpdateDatabaseAfterUpdateSchema()
+			 InitData()
+		End Sub
+		Private Sub InitData()
+			If ObjectSpace.GetObjectsCount(GetType(Product), Nothing) < 10000 Then
+				For i As Integer = 0 To 9999
+					Dim product As Product = ObjectSpace.CreateObject(Of Product)()
+					product.Name = String.Format("Product{0}", i)
+					product.Description = String.Format("Description{0}", i)
+					product.Price = i Mod 10
+				Next i
+				ObjectSpace.CommitChanges()
+			End If
+		End Sub
+	End Class
 End Namespace
