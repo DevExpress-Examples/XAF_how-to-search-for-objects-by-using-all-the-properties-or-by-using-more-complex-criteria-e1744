@@ -26,8 +26,9 @@ namespace Dennis.Search.Win {
             SearchObject(args);
         }
         protected virtual void SearchObject(SingleChoiceActionExecuteEventArgs args) {
-            IObjectSpace os = Application.CreateObjectSpace();
-            object obj = os.CreateObject((Type)args.SelectedChoiceActionItem.Data);
+            Type type = (Type)args.SelectedChoiceActionItem.Data;
+            IObjectSpace os = Application.CreateObjectSpace(type);
+            object obj = os.CreateObject(type);
             DetailView dv = Application.CreateDetailView(os, obj);
             args.ShowViewParameters.CreatedView = dv;
         }
