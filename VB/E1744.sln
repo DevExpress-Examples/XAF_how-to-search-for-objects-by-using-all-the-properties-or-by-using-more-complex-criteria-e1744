@@ -1,4 +1,4 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WinSolution.Module", "WinSolution.Module\WinSolution.Module.vbproj", "{75BEF62C-499C-486B-9952-D7FC7B928845}"
 	ProjectSection(WebsiteProperties) = preProject

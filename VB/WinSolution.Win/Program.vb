@@ -29,27 +29,31 @@ Imports System.Configuration
 Imports DevExpress.ExpressApp.Security
 
 Namespace WinSolution.Win
-	Friend Module Program
-		''' <summary>
-		''' The main entry point for the application.
-		''' </summary>
-		<STAThread>
-		Sub Main()
-			Application.EnableVisualStyles()
-			Application.SetCompatibleTextRenderingDefault(False)
-			EditModelPermission.AlwaysGranted = System.Diagnostics.Debugger.IsAttached
-			Dim winApplication As New WinSolutionWindowsFormsApplication()
-			If ConfigurationManager.ConnectionStrings("ConnectionString") IsNot Nothing Then
-				winApplication.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
-			End If
-			Try
-				DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.Register()
-								winApplication.ConnectionString = DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.ConnectionString
-				winApplication.Setup()
-				winApplication.Start()
-			Catch e As Exception
-				winApplication.HandleException(e)
-			End Try
-		End Sub
-	End Module
+    Friend NotInheritable Class Program
+
+        Private Sub New()
+        End Sub
+
+        ''' <summary>
+        ''' The main entry point for the application.
+        ''' </summary>
+        <STAThread> _
+        Shared Sub Main()
+            Application.EnableVisualStyles()
+            Application.SetCompatibleTextRenderingDefault(False)
+            EditModelPermission.AlwaysGranted = System.Diagnostics.Debugger.IsAttached
+            Dim winApplication As New WinSolutionWindowsFormsApplication()
+            If ConfigurationManager.ConnectionStrings("ConnectionString") IsNot Nothing Then
+                winApplication.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
+            End If
+            Try
+                DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.Register()
+                                winApplication.ConnectionString = DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.ConnectionString
+                winApplication.Setup()
+                winApplication.Start()
+            Catch e As Exception
+                winApplication.HandleException(e)
+            End Try
+        End Sub
+    End Class
 End Namespace
