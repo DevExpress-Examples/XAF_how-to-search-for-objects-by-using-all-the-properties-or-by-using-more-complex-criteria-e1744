@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to search for objects by using all the properties or by using more complex criteria
 ' 
 ' This example provides a possible workaround for the suggestion. The
@@ -21,20 +21,19 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1744
-
 Imports System
-
 Imports DevExpress.ExpressApp.Updating
-Imports DevExpress.Xpo
 Imports DevExpress.ExpressApp
 
 Namespace WinSolution.Module.Win
+
     Public Class Updater
         Inherits ModuleUpdater
 
         Public Sub New(ByVal objectSpace As IObjectSpace, ByVal currentDBVersion As Version)
             MyBase.New(objectSpace, currentDBVersion)
         End Sub
+
         Public Overrides Sub UpdateDatabaseAfterUpdateSchema()
             MyBase.UpdateDatabaseAfterUpdateSchema()
         End Sub

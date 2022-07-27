@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to search for objects by using all the properties or by using more complex criteria
 ' 
 ' This example provides a possible workaround for the suggestion. The
@@ -21,16 +21,12 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1744
-
-Imports System
-Imports System.Collections.Generic
-Imports System.Text
 Imports System.ComponentModel
-
 Imports DevExpress.ExpressApp
 
 Namespace WinSolution.Module.Win
-    <ToolboxItemFilter("Xaf.Platform.Win")> _
+
+    <ToolboxItemFilter("Xaf.Platform.Win")>
     Public NotInheritable Partial Class WinSolutionWindowsFormsModule
         Inherits ModuleBase
 

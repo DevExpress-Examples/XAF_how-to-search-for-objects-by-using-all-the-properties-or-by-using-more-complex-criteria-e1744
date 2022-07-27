@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to search for objects by using all the properties or by using more complex criteria
 ' 
 ' This example provides a possible workaround for the suggestion. The
@@ -21,39 +21,36 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1744
-
 Imports System
-Imports WinSolution.Module
 Imports System.Windows.Forms
 Imports System.Configuration
 Imports DevExpress.ExpressApp.Security
 
 Namespace WinSolution.Win
-    Friend NotInheritable Class Program
 
-        Private Sub New()
-        End Sub
+    Friend Module Program
 
         ''' <summary>
         ''' The main entry point for the application.
         ''' </summary>
-        <STAThread> _
-        Shared Sub Main()
-            Application.EnableVisualStyles()
+        <STAThread>
+        Sub Main()
+            Call Application.EnableVisualStyles()
             Application.SetCompatibleTextRenderingDefault(False)
             EditModelPermission.AlwaysGranted = System.Diagnostics.Debugger.IsAttached
-            Dim winApplication As New WinSolutionWindowsFormsApplication()
+            Dim winApplication As WinSolutionWindowsFormsApplication = New WinSolutionWindowsFormsApplication()
             If ConfigurationManager.ConnectionStrings("ConnectionString") IsNot Nothing Then
                 winApplication.ConnectionString = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
             End If
+
             Try
                 DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.Register()
-                                winApplication.ConnectionString = DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.ConnectionString
+                winApplication.ConnectionString = DevExpress.ExpressApp.Xpo.InMemoryDataStoreProvider.ConnectionString
                 winApplication.Setup()
                 winApplication.Start()
             Catch e As Exception
                 winApplication.HandleException(e)
             End Try
         End Sub
-    End Class
+    End Module
 End Namespace

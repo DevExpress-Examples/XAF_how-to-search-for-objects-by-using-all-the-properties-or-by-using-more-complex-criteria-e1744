@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to search for objects by using all the properties or by using more complex criteria
 ' 
 ' This example provides a possible workaround for the suggestion. The
@@ -21,28 +21,24 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1744
-
 Imports System.Reflection
-Imports System.Runtime.CompilerServices
 Imports System.Runtime.InteropServices
 
 ' General Information about an assembly is controlled through the following 
 ' set of attributes. Change these attribute values to modify the information
 ' associated with an assembly.
-<Assembly: AssemblyTitle("WinSolution.Win")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyConfiguration("")>
-<Assembly: AssemblyCompany("-")>
-<Assembly: AssemblyProduct("WinSolution.Win")>
-<Assembly: AssemblyCopyright("Copyright © - 2007")>
-<Assembly: AssemblyTrademark("")>
-<Assembly: AssemblyCulture("")>
-
+<Assembly:AssemblyTitle("WinSolution.Module.Win")>
+<Assembly:AssemblyDescription("")>
+<Assembly:AssemblyConfiguration("")>
+<Assembly:AssemblyCompany("-")>
+<Assembly:AssemblyProduct("WinSolution.Module.Win")>
+<Assembly:AssemblyCopyright("Copyright © - 2007")>
+<Assembly:AssemblyTrademark("")>
+<Assembly:AssemblyCulture("")>
 ' Setting ComVisible to false makes the types in this assembly not visible 
 ' to COM components.  If you need to access a type in this assembly from 
 ' COM, set the ComVisible attribute to true on that type.
-<Assembly: ComVisible(False)>
-
+<Assembly:ComVisible(False)>
 ' Version information for an assembly consists of the following four values:
 '
 '      Major Version
@@ -52,5 +48,4 @@ Imports System.Runtime.InteropServices
 '
 ' You can specify all the values or you can default the Revision and Build Numbers 
 ' by using the '*' as shown below:
-<Assembly: AssemblyVersion("1.0.*")>
-
+<Assembly:AssemblyVersion("1.0.*")>

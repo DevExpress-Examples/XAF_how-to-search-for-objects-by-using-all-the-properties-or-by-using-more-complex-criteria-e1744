@@ -1,4 +1,4 @@
-﻿' Developer Express Code Central Example:
+' Developer Express Code Central Example:
 ' How to search for objects by using all the properties or by using more complex criteria
 ' 
 ' This example provides a possible workaround for the suggestion. The
@@ -21,32 +21,33 @@
 ' 
 ' You can find sample updates and versions for different programming languages here:
 ' http://www.devexpress.com/example=E1744
-
 Imports System
-Imports DevExpress.Xpo
 Imports DevExpress.ExpressApp.Updating
 Imports DevExpress.ExpressApp
-Imports DevExpress.Data.Filtering
 
 Namespace WinSolution.Module
+
     Public Class Updater
         Inherits ModuleUpdater
 
         Public Sub New(ByVal objectSpace As IObjectSpace, ByVal currentDBVersion As Version)
             MyBase.New(objectSpace, currentDBVersion)
         End Sub
+
         Public Overrides Sub UpdateDatabaseAfterUpdateSchema()
             MyBase.UpdateDatabaseAfterUpdateSchema()
-             InitData()
+            InitData()
         End Sub
+
         Private Sub InitData()
             If ObjectSpace.GetObjectsCount(GetType(Product), Nothing) < 10000 Then
-                For i As Integer = 0 To 9999
+                For i As Integer = 0 To 10000 - 1
                     Dim product As Product = ObjectSpace.CreateObject(Of Product)()
                     product.Name = String.Format("Product{0}", i)
                     product.Description = String.Format("Description{0}", i)
                     product.Price = i Mod 10
-                Next i
+                Next
+
                 ObjectSpace.CommitChanges()
             End If
         End Sub
