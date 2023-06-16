@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="ComplexSearchEF">
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="22.2.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="MySearchClass_DetailView">
+      <Items>
+        <PropertyEditor Id="Age" Caption="Age is equal to" />
+        <PropertyEditor Id="Contacts" Caption="Results" />
+        <PropertyEditor Id="FirstName" Caption="FirstName contains" />
+        <ActionContainerViewItem Id="MySearchCategory" ActionContainer="MySearchCategory" Caption="MySearchCategory(8)" IsNewNode="True" />
+        <StaticText Id="ORItem" Text="OR" Caption="ORItem(10)" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="10.725806451612904">
+            <LayoutGroup Id="MySearchClass" RelativeSize="100">
+              <LayoutItem Id="FirstName" RelativeSize="28.571428571428573" />
+              <LayoutItem Id="ORItem" ViewItem="ORItem" Index="1" RelativeSize="17.293233082706767" IsNewNode="True" />
+              <LayoutItem Id="Age" Index="2" RelativeSize="22.55639097744361" />
+              <LayoutItem Id="MySearchCategory" ViewItem="MySearchCategory" Index="3" RelativeSize="31.57894736842105" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Contacts_Group" Direction="Vertical" RelativeSize="89.2741935483871" Caption="Results:">
+            <LayoutItem Id="Contacts" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

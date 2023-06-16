@@ -2,6 +2,7 @@
 using DevExpress.ExpressApp.Actions;
 using DevExpress.Persistent.Base;
 using dxTestSolution.Module.BusinessObjects;
+using MySolution.Module.BusinessObjects;
 
 namespace dxTestSolution.Module.Controllers {
     public class MyShowSearchController : ObjectViewController<ListView, Contact> {
