@@ -12,10 +12,11 @@ namespace dxTestSolution.Module.Controllers {
 
         }
         private void MyAction1_CustomizePopupWindowParams(object sender, CustomizePopupWindowParamsEventArgs e) {
-            var nonPersistentOS = Application.CreateObjectSpace(typeof(MySearchClass));
+            var nonPersistentOS = (NonPersistentObjectSpace)Application.CreateObjectSpace(typeof(MySearchClass));
             var persistentOS = Application.CreateObjectSpace(typeof(Contact));
-            ((NonPersistentObjectSpace)nonPersistentOS).AdditionalObjectSpaces.Add(persistentOS);
+            nonPersistentOS.AdditionalObjectSpaces.Add(persistentOS);
             var obj = nonPersistentOS.CreateObject<MySearchClass>();
+            nonPersistentOS.CommitChanges();
             var view = Application.CreateDetailView(nonPersistentOS, obj);
             e.View = view;
         }

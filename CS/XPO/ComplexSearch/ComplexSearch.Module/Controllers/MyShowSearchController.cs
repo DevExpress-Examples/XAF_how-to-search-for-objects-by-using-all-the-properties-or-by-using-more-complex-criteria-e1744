@@ -15,6 +15,7 @@ namespace dxTestSolution.Module.Controllers {
             var persistentOS = Application.CreateObjectSpace(typeof(Contact));
             ((NonPersistentObjectSpace)nonPersistentOS).AdditionalObjectSpaces.Add(persistentOS);
             var obj = nonPersistentOS.CreateObject<MySearchClass>();
+            nonPersistentOS.CommitChanges();
             var view = Application.CreateDetailView(nonPersistentOS, obj);
             e.View = view;
         }
