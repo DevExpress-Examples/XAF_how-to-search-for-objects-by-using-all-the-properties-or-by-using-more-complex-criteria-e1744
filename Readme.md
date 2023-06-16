@@ -5,10 +5,10 @@
 <!-- default badges end -->
 <!-- default file list -->
 *Files to look at*:
-[MySearchClass.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/BusinessObjects/MySearchClass.cs)
-[Model.DesignedDiffs.xafml](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Model.DesignedDiffs.xafml)
-[MySearchController.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Controllers/MySearchController.cs)
-[MyShowSearchController.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Controllers/MyShowSearchController.cs)
+* [MySearchClass.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/BusinessObjects/MySearchClass.cs)
+* [Model.DesignedDiffs.xafml](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Model.DesignedDiffs.xafml)
+* [MySearchController.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Controllers/MySearchController.cs)
+* [MyShowSearchController.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Controllers/MyShowSearchController.cs)
 <!-- default file list end -->
 How to search for XAF objects using a complex criterion
 
