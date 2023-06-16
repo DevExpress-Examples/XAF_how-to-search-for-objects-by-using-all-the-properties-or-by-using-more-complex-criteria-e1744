@@ -10,7 +10,8 @@
 * [MySearchController.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Controllers/MySearchController.cs)
 * [MyShowSearchController.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Controllers/MyShowSearchController.cs)
 <!-- default file list end -->
-How to search for XAF objects using a complex criterion
+# How to search for XAF objects using a complex criterion
+
 
 To accomplish this task, take the following steps:
 
