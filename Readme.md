@@ -22,5 +22,6 @@ To accomplish this task, take the following steps:
 4. When a user presses this 'Search' action, create a criterion based on the properties from point 1 and get persistent objects that fit this criterion as described at the 'Get a collection' section of [Create, Read, Update and Delete Data](https://docs.devexpress.com/eXpressAppFramework/113711/concepts/data-manipulation-and-business-logic/create-read-update-and-delete-data): [MySearchController.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Controllers/MySearchController.cs)
 5. To show this non-persistent class view, use the solution from [Ways to Show a View](https://docs.devexpress.com/eXpressAppFramework/112803/ui-construction/views/ways-to-show-a-view/ways-to-show-a-view): [MyShowSearchController.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Controllers/MyShowSearchController.cs)
 
+![image](https://github.com/DevExpress-Examples/XAF_how-to-search-for-objects-by-using-all-the-properties-or-by-using-more-complex-criteria-e1744/assets/14300209/c5b8ac4b-9e88-4f29-99cd-b2a0bdf64890)
 
 
