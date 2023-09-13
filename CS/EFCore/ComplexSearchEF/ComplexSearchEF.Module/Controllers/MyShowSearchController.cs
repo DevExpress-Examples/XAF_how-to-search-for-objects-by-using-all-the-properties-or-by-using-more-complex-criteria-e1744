@@ -8,6 +8,7 @@ namespace dxTestSolution.Module.Controllers {
     public class MyShowSearchController : ObjectViewController<ListView, Contact> {
         public MyShowSearchController() {
             var mypopAction1 = new PopupWindowShowAction(this, "MyShowSearchAction", PredefinedCategory.Edit);
+            mypopAction1.TargetViewNesting = Nesting.Root;
             mypopAction1.CustomizePopupWindowParams += MyAction1_CustomizePopupWindowParams;
 
         }
