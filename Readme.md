@@ -42,7 +42,7 @@ This example creates a pop-up window that allows users to perform custom object 
     }
     ```
 
-3. Populate a detail view for the non-persistent class with the **MySearch** action.  
+3. Add the **MySearch** action that will populate the collection.
      _File to review: [MySearchController.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Controllers/MySearchController.cs)_
     ```cs
     public class MySearchController : ObjectViewController<DetailView, MySearchClass> {
@@ -69,7 +69,7 @@ This example creates a pop-up window that allows users to perform custom object 
     }
     ```
 
-5. Create the **MyShowSearchAction** to display the configured detail view in a pop-up window.  
+5. Create the **MyShowSearchAction** to display the **MySearchClass** detail view from the **Contact** list view in a pop-up window.
      _File to review: [MyShowSearchController.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Controllers/MyShowSearchController.cs)_
     ```cs
     public class MyShowSearchController : ObjectViewController<ListView, Contact> {
