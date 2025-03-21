@@ -7,13 +7,13 @@
 
 # How to search for XAF objects using a complex criterion
 
-This example creates a pop-up window that allows users to perform custom object search.
+This example creates a pop-up window that allows users to perform a custom object search.
 
 ![MySearchClass window](my-search-class-window.png)
 
 ## Implementation Details
 
-1. Create a [non-persistent](https://docs.devexpress.com/eXpressAppFramework/116516/business-model-design-orm/non-persistent-objects) class with properties that we will be used to search persistent objects.  
+1. Create a [non-persistent](https://docs.devexpress.com/eXpressAppFramework/116516/business-model-design-orm/non-persistent-objects) class with properties used to search persistent objects.  
     _File to review: [MySearchClass.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/BusinessObjects/MySearchClass.cs)_
     ```cs
     [DomainComponent]
@@ -26,7 +26,7 @@ This example creates a pop-up window that allows users to perform custom object 
     }
     ```
 
-2. Add a collection of persistent objects that will contain the search results.  
+2. Add a collection of persistent objects that contains the search results.  
      _File to review: [MySearchClass.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/BusinessObjects/MySearchClass.cs)_
     ```cs
     [DomainComponent]
@@ -42,7 +42,7 @@ This example creates a pop-up window that allows users to perform custom object 
     }
     ```
 
-3. Add the **MySearch** action that will populate the collection.
+3. Add the **MySearch** action that populates the collection.
      _File to review: [MySearchController.cs](CS/EFCore/ComplexSearchEF/ComplexSearchEF.Module/Controllers/MySearchController.cs)_
     ```cs
     public class MySearchController : ObjectViewController<DetailView, MySearchClass> {
