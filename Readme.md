@@ -33,7 +33,7 @@ Alternatively, you can implement a similar solution, but with persistent filters
 
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=XAF_how-to-search-for-objects-by-using-all-the-properties-or-by-using-more-complex-criteria-e1744&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=XAF_how-to-search-for-objects-by-using-all-the-properties-or-by-using-more-complex-criteria-e1744&~~~was_helpful=no)
 
