@@ -14,7 +14,6 @@ public class ComplexSearchWindowsFormsApplication : WinApplication {
 		SplashScreen = new DXSplashScreen(typeof(XafSplashScreen), new DefaultOverlayFormOptions());
         ApplicationName = "ComplexSearch";
         CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
-        UseOldTemplates = false;
         DatabaseVersionMismatch += ComplexSearchWindowsFormsApplication_DatabaseVersionMismatch;
         CustomizeLanguagesList += ComplexSearchWindowsFormsApplication_CustomizeLanguagesList;
     }
